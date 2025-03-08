@@ -7,7 +7,7 @@ import "@testing-library/jest-dom";
 
 import { App } from "../src/app";
 
-describe("buttons and counters", () => {
+describe("button and counter", () => {
   let container = App();
 
   // Reset the App before each test
