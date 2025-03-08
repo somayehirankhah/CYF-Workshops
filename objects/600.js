@@ -10,7 +10,8 @@ const person = {
 };
 
 function assertFieldEquals(object, field, targetValue) {
-    console.assert(object.field === targetValue);
+   console.log(object[field]);
+    console.assert(object[field] === targetValue);
 }
 
 assertFieldEquals(person, "favourite_ice_cream", "vanilla");
