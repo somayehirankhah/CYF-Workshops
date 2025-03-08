@@ -12,6 +12,8 @@ describe("buttons also counters", () => {
 
   // Reset the App before each test
 
+
+
   beforeEach(() => {
     container = App();
   });
@@ -25,6 +27,8 @@ describe("buttons also counters", () => {
   test("counter starts at 0", () => {
     expect(getByTestId(container, "counter")).toHaveTextContent(/^0$/);
   });
+
+
 
   test("pressing Increment increases the counter", () => {
     const button = getByRole(container, "button", {
