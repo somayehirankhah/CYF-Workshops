@@ -7,10 +7,8 @@ import "@testing-library/jest-dom";
 
 import { App } from "../src/app";
 
-describe("buttons and counters", () => {
+describe("button and counter", () => {
   let container = App();
-
-
 
   // Reset the App before each test
   
@@ -30,7 +28,7 @@ describe("buttons and counters", () => {
   });
 
 
-  
+
   test("pressing Increment increases the counter", () => {
     const button = getByRole(container, "button", {
       name: "Increment",
