@@ -7,13 +7,14 @@ import "@testing-library/jest-dom";
 
 import { App } from "../src/app";
 
-
 describe("buttons and counters", () => {
   let container = App();
 
 
+
   // Reset the App before each test
   
+
   beforeEach(() => {
     container = App();
   });
@@ -28,6 +29,8 @@ describe("buttons and counters", () => {
     expect(getByTestId(container, "counter")).toHaveTextContent(/^0$/);
   });
 
+
+  
   test("pressing Increment increases the counter", () => {
     const button = getByRole(container, "button", {
       name: "Increment",
